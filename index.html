@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fff6f3" id="browserThemeColor">
+    <title>Sirapat Chuaysong | Resume</title>
+    <meta name="description" content="Resume of Sirapat Chuaysong — Computer Artificial Intelligence student, Faculty of Engineering, Panyapiwat Institute of Management.">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+        try { const t = localStorage.getItem("diary-theme-v2"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) { }
+    </script>
+</head>
+
+<body tabindex="0">
+
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <div class="scroll-progress"><span id="scrollBar"></span></div>
+
+
+    <!--Navbar-->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><span class="brand-star">✿</span> <span data-field="shortName">Sirapat</span><span class="brand-dot">.</span></a>
+
+            <div class="d-flex align-items-center gap-2 order-lg-last">
+                <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle light/dark theme">
+                    <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+                </button>
+                <button class="navbar-toggler icon-btn" type="button" 
+                     aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="burger"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto me-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero ===== -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+                    <p class="hero-hello"><span class="eyebrow-dot"></span> WELCOME TO MY RESUME</p>
+                    <h1 class="hero-name" data-field="name"></h1>
+                    <p class="hero-role"><em data-field="role"></em></p>
+                    <p class="hero-org">
+                        <span data-field="faculty"></span> ·
+                        <a id="uniLink" target="_blank" rel="noopener"></a>
+                    </p>
+                    <p class="hero-tagline" data-field="tagline"></p>
+
+                    <div class="chips justify-content-center justify-content-lg-start">
+                        <span class="chip chip-status" id="statusChip"><span class="dot"></span><span data-field="status"></span></span>
+                        <span class="chip">📍 <span data-field="location"></span></span>
+                    </div>
+
+                    <div class="hero-actions justify-content-center justify-content-lg-start">
+                        <a href="#contact" class="btn-main">Get in touch</a>
+                        <a href="#about" class="btn-ghost">About me ↓</a>
+                        <button type="button" class="btn-ghost" id="printBtn">Save as PDF</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="portrait-stage"><div class="photo-window-bar"><span>● ● ●</span><span>Sirapat Chuaysong</span><span>♡</span></div><span class="ribbon-sticker" aria-hidden="true">୨୧</span><span class="heart-sticker" aria-hidden="true">♡</span><span class="portrait-orbit" aria-hidden="true">✿</span><span class="portrait-note">the face behind<br>this little corner ↙</span><div class="avatar-wrap">
+                        <div class="avatar-ring">
+                            <img id="avatar" class="avatar" alt="Profile photo" loading="eager" decoding="async">
+                        </div>
+                        <span class="avatar-badge" title="Open to internship">SAY<br>HELLO ♡</span><span class="portrait-caption">6840078230 ♡</span>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <!-- <div class="hero-word" aria-hidden="true"><span>✿</span> Small steps. Bright dreams. <span>♡</span></div> -->
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </header>
+
+    <hr class="divider">
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">01.</span> About Me ♡</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="card-glass about-text" id="aboutBody"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== Projects =====
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">02.</span> Projects</h2>
+            <div class="row g-4" id="projectList"></div>
+        </div>
+    </section> -->
+
+    <hr class="divider">
+
+    <!-- ===== Education & Experience ===== -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">03.</span> Education & Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <ul class="timeline" id="timelineList"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!--Skills-->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">04.</span>Skills</h2>
+            <div id="skillGroups"></div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!--Others-->
+    <section id="others" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">05.</span> Others</h2>
+            <div class="row g-4" id="otherList"></div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!--Contact-->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="num">06.</span> Let’s say hello!</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card-glass">
+                        <p class="contact-lead">Interested in working together or offering an internship? Feel free to reach out.</p>
+                        <ol class="contact-list" id="contactList"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="mb-0">&copy; <span id="year"></span> <span data-field="name"></span> · Made with care &amp; a little sparkle.</p>
+    </footer>
+
+    <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
+
+    <div id="toast" class="toast-msg" role="status" aria-live="polite"></div>
+
+    <!-- <noscript>
+        <p class="noscript">Please enable JavaScript to view this resume.</p>
+    </noscript> -->
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
